@@ -1,0 +1,61 @@
+/* TopBar.module.css */
+.topbar {
+    height: 60px;
+    padding: 0;
+    font-size: 14px;
+    transition: all 0.5s;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 996;
+}
+  
+.topbarScrolled {
+    top: -60px;
+}
+
+.contactInfo a {
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.contactInfo a:hover {
+    text-decoration: underline;
+}
+
+.contactInfo i {
+    color: #BE1E2D;
+    line-height: 0;
+    margin-right: 5px;
+}
+
+.phoneIcon {
+    margin-left: 15px;
+}
+
+.cta {
+    background: transparent;
+}
+
+.ctaButton {
+    color: #fff;
+    background: #f6b024;
+    padding: 6px 24px 8px 24px;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.ctaButton:hover {
+    background: #f1a40a;
+}
+
+.clickButton {
+    color: #fff;
+    background: firebrick;
+    padding: 6px 24px 8px 24px;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 50px;
+    margin-top: 1em;
+}

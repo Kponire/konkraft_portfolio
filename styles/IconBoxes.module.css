@@ -1,0 +1,84 @@
+/* IconBoxes.module.css */
+.iconBoxes {
+    padding-top: 0;
+    position: relative;
+    z-index: 100;
+}
+  
+.iconBox {
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+    transition: all 0.4s ease-in-out;
+    transform: rotate(0deg);
+    border-radius: 10px;
+}
+  
+.iconBox:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    font-weight: bolder;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    transform: rotate(45deg);
+}
+  
+.iconContainer {
+    margin: 0 auto 20px auto;
+    display: inline-block;
+    text-align: center;
+}
+  
+.icon {
+    font-size: 36px;
+    line-height: 1;
+    color: #BE1E2D;
+}
+  
+.title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+  
+.AD {
+    color: #BE1E2D;
+}
+  
+.description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.anime{
+    margin-bottom:10px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada {
+    0% {-webkit-transform: scale(1);}
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+    100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+    0% {transform: scale(1);}
+    10%, 20% {transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+    100% {transform: scale(1) rotate(0);}
+}
+   
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+  

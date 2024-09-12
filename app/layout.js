@@ -1,4 +1,12 @@
+import  "bootstrap/dist/css/bootstrap.css"
+import  "bootstrap/dist/css/bootstrap.min.css"
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import { AOSInit } from '../components/Aos'
 import { Inter } from "next/font/google";
+import AddBootstrap from "..components/AddBootstrap";
+import "animate.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,7 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AOSInit />
+        <AddBootstrap/>
+        {children}
+      </body>
     </html>
   );
 }

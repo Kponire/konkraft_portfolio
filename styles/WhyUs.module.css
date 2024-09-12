@@ -1,0 +1,118 @@
+/* WhyUs.module.css */
+.whyUs {
+  background: brown;
+  padding: 0;
+}
+
+.content {
+  padding: 60px 100px 0 100px;
+}
+
+.content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: sandybrown;
+}
+
+.content p {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.videoBox {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+  position: relative;
+}
+
+.accordionList {
+  padding: 0 100px 60px 100px;
+}
+
+.accordionToggle {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  cursor: pointer;
+  color: #343a40;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.accordionToggle:hover,
+.accordionToggle.collapsed:hover {
+  color: #BE1E2D;
+}
+
+.accordionToggle span {
+  color: #BE1E2D;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.icon-show {
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: none;
+}
+
+.icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: inline-block;
+}
+
+.accordionToggle.collapsed .icon-show {
+  display: inline-block;
+}
+
+.accordionToggle.collapsed .icon-close {
+  display: none;
+}
+
+.nerdyPen {
+  margin-left: 6em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.nerdyPenText {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 9.5em;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .content,
+  .accordionList {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    padding-top: 30px;
+  }
+  .accordionList {
+    padding-bottom: 30px;
+  }
+}

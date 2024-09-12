@@ -1,0 +1,123 @@
+/* Services.module.css */
+.services {
+    padding: 60px 0;
+  }
+  
+  .iconBox {
+    margin-bottom: 20px;
+    padding: 50px 40px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 3px 3px 5px brown;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .iconBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 5px grey;
+  }
+  
+  .icon {
+    float: left;
+    color: #BE1E2D;
+    font-size: 40px;
+    line-height: 0;
+  }
+  
+  .iconBox h4 {
+    margin-left: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .iconBox h4 a {
+    color: red;
+    transition: 0.3s;
+  }
+  
+  .iconBox h4 a:hover {
+    color: #BE1E2D;
+    transition: ease-in-out 0.7s;
+  }
+  
+  .iconBox p {
+    margin-left: 70px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: brown;
+  }
+  
+  .sectionTitle p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  @media (max-width: 992px) {
+    .iconBox {
+      margin-bottom: 30px;
+    }
+  }
+
+.cta {
+    background: linear-gradient(rgba(85, 74, 23, 0.8), rgba(85, 74, 43, 0.9)),  url("../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 8px 26px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid orangered;
+    color: #fff;
+}
+
+.cta .cta-btn:hover {
+    background: brown;
+}
+
+@media (max-width: 1024px) {
+    .cta {
+      background-attachment: scroll;
+    }
+}
+
+@media (min-width: 769px) {
+    .cta .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+}

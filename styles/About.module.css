@@ -1,0 +1,92 @@
+/* About.module.css */
+.about {
+    padding: 140px 0;
+    background: url('/assets/img/about-bg.png') top center no-repeat;
+    position: relative;
+    font-weight: bolder;
+}
+  
+.about::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+  .container {
+    position: relative;
+  }
+  
+.sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: brown;
+}
+  
+.sectionTitle p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+  
+.content h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+  
+.list {
+    list-style: none;
+    padding: 0;
+}
+  
+.list li {
+    padding-left: 28px;
+    position: relative;
+}
+  
+.list li + li {
+    margin-top: 10px;
+}
+  
+.icon {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #BE1E2D;
+    line-height: 1;
+}
+  
+.btnLearnMore {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 5px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #BE1E2D;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid brown;
+}
+  
+.btnLearnMore:hover {
+    background: red;
+    color: #fff;
+    text-decoration: unset;
+}
+  
+@media (max-width: 992px) {
+    .about {
+      padding: 60px 0;
+    }
+}
+  
